@@ -30,10 +30,10 @@ Version Control: Git & GitHub
        ![VM creation](images/createvm.png)
 
 # osTicket Deployment on Microsoft Azure
-/images/createvm.png
 
 
-2. Install Required Software
+
+1. Install Required Software
 
 
 3. Download and Install osTicket
