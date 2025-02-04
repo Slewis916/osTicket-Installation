@@ -22,14 +22,24 @@ Version Control: Git & GitHub
 
 
 ### Installation Steps
-1. Set Up the Azure Virtual Machine
+1. Set Up the Azure Virtual Machine  
    
    Create a new Azure Virtual Machine
 
      Select your __Subscription__ then create a new __Resource Group__ for your VM. Create a __Virtual Machine Name__. Choose a __Region__  and select your Ubuntu __Image__.
-       ![VM creation](images/createvm.png)
+       ![VM creation](images/createvm.png)  
 
-# osTicket Deployment on Microsoft Azure
+          
+***  
+
+
+
+    Once your VM is created, it should be in  a __Running__ state and if it is not __Start__ the VM.    
+
+    ![connect VM](images/connect.png)  
+ 
+
+
 
 
 
