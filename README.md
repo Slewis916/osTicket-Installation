@@ -4,7 +4,7 @@ This guide is for individuals using a macOS or Unix-based host who want to set u
 
 
 
-##Technologies Used
+### Technologies Used
 
 Operating System: Ubuntu Linux
 
