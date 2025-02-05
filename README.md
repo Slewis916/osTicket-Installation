@@ -47,6 +47,7 @@ Version Control: Git & GitHub
 #### Now that your VM is open, you need to update and upgrade the system. Run this command:
 `sudo apt update && sudo apt upgrade -y`
 
+****
 
 ### 2. Install Required Software  
    `sudo apt install -y apache2 mysql-server php libapache2-mod-php php-cli php-mbstring php-xml php-common php-mysql php-imap php-gd php-intl unzip php-apcu php-curl`
@@ -57,14 +58,46 @@ sudo systemctl enable apache2
 sudo systemctl start mysql
 sudo systemctl enable mysql`
 
-###
+### Configure MariaDB (MySQL Database)
+#### Secure MariaDB by running:
+`sudo mysql_secure_installation`
 
+#### Next you will need to: 
+- [ ] Set a root password (it will prompt you).
+- [ ] Remove anonymous users.
+- [ ] Disallow remote root login.
+- [ ] Remove test database.
+- [ ] Reload privileges.
+
+### Create a database and user for osTicket:
+#### Log into MariaDB:
+`sudo mysql -u root -p`
+
+### Run the following SQL commands to create a database and user for osTicket:
+`CREATE DATABASE osticket;
+CREATE USER 'osticketuser'@'localhost' IDENTIFIED BY 'yourpassword';
+GRANT ALL PRIVILEGES ON osticket.* TO 'osticketuser'@'localhost';
+FLUSH PRIVILEGES;
+EXIT;`
+#### Replace __'yourpassword'__ with a strong passowrd.
+
+****
 
 ### 3. Download and Install osTicket
+#### Navigate to the web root directory:
+`cd /var/www/html`
+#### Download the latest osTicket release:
+`curl -sSL https://github.com/osTicket/osTicket/releases/latest/download/osTicket-v1.17.zip -o osticket.zip`
+#### Unzip the file:
+`sudo unzip osticket.zip -d osticket`
 
 
 
-4. Configure Apache for osTicket
+
+
+
+
+1. Configure Apache for osTicket
 
 
 5. Finalizing Setup
