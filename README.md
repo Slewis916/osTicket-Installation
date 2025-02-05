@@ -90,14 +90,16 @@ EXIT;`
 `curl -sSL https://github.com/osTicket/osTicket/releases/latest/download/osTicket-v1.17.zip -o osticket.zip`
 #### Unzip the file:
 `sudo unzip osticket.zip -d osticket`
+#### Set permissions for the osTicket files:
+`sudo chown -R www-data:www-data /var/www/html/osticket
+sudo chmod -R 755 /var/www/html/osticket`
 
+****
 
+### 4. Configure Apache for osTicket
+#### Create a new Apache configuration file for osTicket:
+`sudo nano /etc/apache2/sites-available/osticket.conf`
 
-
-
-
-
-1. Configure Apache for osTicket
 
 
 5. Finalizing Setup
