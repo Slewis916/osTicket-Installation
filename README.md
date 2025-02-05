@@ -35,12 +35,12 @@ Version Control: Git & GitHub
 
 #### Once your VM is created, it should be in  a __Running__ state. Click __Connect__ then __Connect__ again.
 
- ![VM creation](images/connect.png)   
+ ![VM connect](images/connect.png)   
 
 
 
 #### To access your Ubuntu VM select __SSH using Azure CLI__
- ![VM creation](images/cli.png) 
+ ![SSH into Azure CLI](images/cli.png) 
 
 
 
@@ -99,9 +99,13 @@ sudo chmod -R 755 /var/www/html/osticket`
 ### 4. Configure Apache for osTicket
 #### Create a new Apache configuration file for osTicket:
 `sudo nano /etc/apache2/sites-available/osticket.conf`
+#### Replace __ServerName__ with your actual public IP address:
+![VM connect](images/conf.png)   
 
 
 
-5. Finalizing Setup
+
+
+1. Finalizing Setup
 
 🚀 Successfully deployed osTicket on Azure!
