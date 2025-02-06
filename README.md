@@ -101,6 +101,22 @@ sudo chmod -R 755 /var/www/html/osticket`
 ### Enable the site and restart Apache:
 `sudo a2ensite osticket.conf
 sudo systemctl restart apache2`
+
+### Optional Step: Configure a DNS Name
+#### Use Azure's Built-in DNS Name
+
+1. Go to the Azure Portal (portal.azure.com).
+2. Navigate to Virtual Machines → Select your osTicket VM.
+3. Click on Networking → Public IP Address.
+4. Under DNS Name Label, enter a custom name (e.g., osticket-slewis).
+5. Save the changes.
+6. Your VM will now be accessible via:
+   http://yourdnsname.eastus.cloudapp.azure.com  
+   (The region will vary based on your Azure deployment)
+
+![configured dns name](images/dns.png) 
+   
+
 ****
 
 ### 5. Access osTicket Setup in a Browser
