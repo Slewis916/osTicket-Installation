@@ -101,7 +101,7 @@ sudo chmod -R 755 /var/www/html/osticket`
 ### Enable the site and restart Apache:
 `sudo a2ensite osticket.conf
 sudo systemctl restart apache2`
-
+****
 ### Optional Step: Configure a DNS Name
 #### Use Azure's Built-in DNS Name
 
