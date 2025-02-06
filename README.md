@@ -106,9 +106,15 @@ sudo chmod -R 755 /var/www/html/osticket`
 ### Enable the site and restart Apache:
 `sudo a2ensite osticket.conf
 sudo systemctl restart apache2`
+****
 
+### 5. Access osTicket Setup in a Browser
+#### Open a browser and go to:
+#### http://<Your-Public-IP/setup>
+#### For example, my public IP address is: http://172.190.40.175/setup/ 
+![Browser setup page ](images/installed.png)   
 
-
+###
 
 
 
