@@ -63,11 +63,11 @@ sudo systemctl enable mysql`
 `sudo mysql_secure_installation`
 
 #### Next you will need to: 
-- [ ] Set a root password (it will prompt you).
-- [ ] Remove anonymous users.
-- [ ] Disallow remote root login.
-- [ ] Remove test database.
-- [ ] Reload privileges.
+- [x] Set a root password (it will prompt you).
+- [x] Remove anonymous users.
+- [x] Disallow remote root login.
+- [x] Remove test database.
+- [x] Reload privileges.
 
 ### Create a database and user for osTicket:
 #### Log into MariaDB:
@@ -114,8 +114,16 @@ sudo systemctl restart apache2`
 #### For example, my public IP address is: http://172.190.40.175/setup/ 
 ![Browser setup page ](images/installed.png)   
 
-###
+#### Fill out the form to finish the installation:
+![Installation ](images/configure.png) 
 
+#### Complete the setup and create an admin account. Your default email and your Admin User email should be different. 
+#### Database Settings:
+- [x] MySQL Database: osticket
+- [x] MySQL Username: osticketuser
+- [x] MySQL Password: yourpassword
+
+![Installation ](images/database.png) 
 
 
 
