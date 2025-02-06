@@ -25,13 +25,8 @@ Version Control: Git & GitHub
 ### 1. Create a new Azure Virtual Machine  
 
  #### Select your __Subscription__ then create a new __Resource Group__ for your VM. Create a __Virtual Machine Name__. Choose a __Region__  and select your Ubuntu __Image__.
-  ![VM creation](images/createvm.png)  
-
-          
+  ![VM creation](images/createvm.png)          
 ***     
-
-
-
 
 #### Once your VM is created, it should be in  a __Running__ state. Click __Connect__ then __Connect__ again.
 
@@ -117,16 +112,22 @@ sudo systemctl restart apache2`
 #### Fill out the form to finish the installation:
 ![Installation ](images/configure.png) 
 
-#### Complete the setup and create an admin account. Your default email and your Admin User email should be different. 
+#### Your default email and your Admin User email should be different. 
 #### Database Settings:
 - [x] MySQL Database: osticket
 - [x] MySQL Username: osticketuser
 - [x] MySQL Password: yourpassword
 
 ![Installation ](images/database.png) 
+ #### Complete the setup and create an admin account. 
+ ![Completed setup ](images/completed.png) 
+****
+
+### 6. Finalizing Setup
+#### After installation, delete the setup directory:
+`sudo rm -rf /var/www/html/osticket/upload/setup`
+#### Restart Apache:
+`sudo systemctl restart apache2`
 
 
-
-1. Finalizing Setup
-
-🚀 Successfully deployed osTicket on Azure!
+## 🚀 Successfully deployed osTicket on Azure!
