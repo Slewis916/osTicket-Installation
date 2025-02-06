@@ -79,7 +79,7 @@ CREATE USER 'osticketuser'@'localhost' IDENTIFIED BY 'yourpassword';
 GRANT ALL PRIVILEGES ON osticket.* TO 'osticketuser'@'localhost';
 FLUSH PRIVILEGES;
 EXIT;`
-#### Replace __'yourpassword'__ with a strong passowrd.
+#### Replace __'yourpassword'__ with a strong password.
 
 ****
 
@@ -101,6 +101,13 @@ sudo chmod -R 755 /var/www/html/osticket`
 `sudo nano /etc/apache2/sites-available/osticket.conf`
 #### Replace __ServerName__ with your actual public IP address:
 ![VM connect](images/conf.png)   
+#### Save and close (CTRL+X, then Y, then Enter)
+
+### Enable the site and restart Apache:
+`sudo a2ensite osticket.conf
+sudo systemctl restart apache2`
+
+
 
 
 
