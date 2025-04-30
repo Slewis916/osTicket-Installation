@@ -149,3 +149,7 @@ sudo systemctl restart apache2`
 
 
 ## 🚀 Successfully deployed osTicket on Azure!
+---
+
+➡️ **Next Step:** [Continue to Configuration Repository »](https://github.com/Slewis916/osTicket-Configuration)
+
